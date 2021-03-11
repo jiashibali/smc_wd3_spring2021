@@ -1,0 +1,9 @@
+.alert-danger {
+    color: #808080;
+    background-color: #f31827;
+    border-color: #000000;
+}
+
+.alert-danger .alert-link {
+    color: #3cd43c;
+}
