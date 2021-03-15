@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat&display=swap');
+
+body {
+    background-color:#2f0406;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.fw-light {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    color:#f7f7ff;
+}
+
+.text-muted {
+    color:#777777 !important;
+}
+ 
+.navbar {
+    background-color: #020000;
+}
+
+.navbar-dark .navbar-brand {
+    color: #f7f7ff;
+}
+
+.navbar-brand img {
+    max-width: 80px;
+    margin-left:10px;
+}
+
+.btn-primary {
+    color: #f7f7f7;
+    background-color: #2f0406;
+    border-color: #f7f7ff;
+}
+
+.btn-primary:hover {
+    color: #020000;
+    background-color: #513b3c;
+    border-color: #f7f7f7;
+}
+
+.btn-secondary {
+    color: #f7f7f7;
+    background-color: #777777;
+    border-color: #f7f7f7;
+}
+
+.btn-secondary:hover {
+    color: #020000;
+    background-color: #513b3c;
+    border-color: #f7f7f7;
+}
+
+.card {
+    background-color: #f7f7ff;
+    background-clip: border-box;
+    border: 1px solid #f7f7ff;
+    border-radius: .25rem;
+}
+
+h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    color:#f7f7ff;
+    text-transform:uppercase;
+    text-decoration: underline;
+}
+
+.card-title {
+    font-family: 'Libre Baskerville', serif;
+    color: #e60016;
+}
+
+.card-text {
+    color: #513b3c;
+}
+
+.card img:hover {
+    opacity: 0.7;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+h4 {
+    color: #f7f7ff;
+    font-family: 'Libre Baskerville', serif;
+}
+
+h6 {
+    color: #513b3c;
+    font-family: 'Libre Baskerville', serif;
+}
+
+p {
+    color: #777777;
+}
+
+.lead {
+    color: #777777;
+}
+
+img {
+    border-radius: .25rem;
+}
