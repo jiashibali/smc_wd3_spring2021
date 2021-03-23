@@ -12,6 +12,7 @@ h2 {
 h4 {
     font-family: 'Fredoka One', cursive;
     color:rebeccapurple;
+    padding-bottom: 10px;
 }
 
 .btn-dark {
@@ -24,6 +25,8 @@ h4 {
     border-color: white;
 }
 
+
+
 a {
     color:rebeccapurple;
     text-decoration: none;
@@ -35,4 +38,9 @@ a {
 
 .form-select {
     border-color:rebeccapurple;
+}
+
+
+.input-group-text {
+    border-color: rebeccapurple;
 }

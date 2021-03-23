@@ -17,7 +17,7 @@
     <header>
       <div class="py-5 text-center">
 
-        <img class="d-block mx-auto mb-4" src="https://static.thenounproject.com/png/1570213-200.png" alt="shopping cart icon" width="80">
+        <img class="d-block mx-auto mb-1" src="img/pusheencart.png" alt="shopping cart icon" width="250">
         
         <h2 class="mb-4">Ready to checkout?</h2>
 
@@ -26,11 +26,11 @@
       </div>
     </header>
 
-    <main class="container py-5">
+    <main class="container pb-5">
       <div class="row">
         <div class="col-sm-12 col-md-8 mx-auto">
           
-          <form action="" method="POST" id="myForm">
+          <form action="" method="POST" id="myForm" class="border border-dark border-2 rounded p-5" style="display:none">
 
             <fieldset>
               <h4>Shipping information:</h4>
@@ -111,7 +111,7 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 mb-3">
-                  <label for="shippingZip">ZIP/Postal Code</label>
+                  <label for="shippingZip">ZIP Code</label>
                   <input type="text" name="shippingZip" class="form-control" id="shippingZip">
                 </div>
 
@@ -127,6 +127,8 @@
 
               <div class="row g-3">
 
+                
+
                 <div class="col-sm-12 col-md-6">
                   <label for="ccName">Name on card</label>
                   <input type="text" name="ccName" id="ccName" class="form-control">
@@ -136,6 +138,7 @@
                   <label for="ccNumber">Credit card number</label>
                   <input type="text" name="ccNumber" id="ccNumber" class="form-control">
                 </div>
+
 
               </div>
 
@@ -183,6 +186,9 @@
                   <input type="text" name="ccCvv" id="ccCvv" class="form-control">
                 </div>
 
+
+
+
               </div>
 
             </fieldset>
@@ -194,11 +200,12 @@
               <h4>Billing information:</h4>
 
               <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" id="sameInfo">
+                <input class="form-check-input" type="checkbox" id="sameInfo" onclick="sameAs()">
                 <label class="form-check-label" for="sameInfo">
                   Same as shipping information
                 </label>
               </div>
+
 
               <div class="mb-3">
                 <label for="billingName">Billing Name</label>
@@ -276,7 +283,7 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 mb-3">
-                  <label for="billingZip">Billing ZIP/Postal Code</label>
+                  <label for="billingZip">Billing ZIP Code</label>
                     <input type="text" name="billingZip" class="form-control" id="billingZip">
                 </div>
 
@@ -286,13 +293,19 @@
 
             <hr>
 
+            <div class="input-group mb-3">
+              <span class="input-group-text">Delivery instructions</span>
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+
             <div class="form-check form-switch mb-3">
               <input type="checkbox" name="termsAgree" id="termsAgree" class="form-check-input">
               <label for="termsAgree" class="form-check-label">I agree to the
                 <a href="#">terms & conditions</a>.</label>
             </div>
 
-            <button type="submit" class="btn btn-light">Submit</button>
+            <button type="submit" class="btn btn-light" onclick="placeOrder()">Place Your Order</button>
+
 
           </form>
         </div>
@@ -305,30 +318,62 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
+    <script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+
     <script>
       function formShowHide() {
-        var x = document.getElementById("myForm");
-        if (x.style.display === "none") {
-          x.style.display = "block";
+        var showhide = document.getElementById("myForm");
+        if (showhide.style.display === "none") {
+          showhide.style.display = "block";
         } else {
-          x.style.display = "none";
+          showhide.style.display = "none";
         }
       } 
     </script>
 
-    <script>
-      let uNinput = document.getElementById("shippingName");
-      let shNinput = document.getElementById("billingName");
 
-      uNinput.addEventListener("blur", function(){
-          if(this.value != ""){
-              shNinput.value = this.value;
+    
+    <script>
+      function sameAs()
+          {
+              if (sameInfo.checked == true)
+              {
+                  var shNam = document.getElementById("shippingName").value;
+                  var shStr = document.getElementById("shippingStreet").value;
+                  var shCit = document.getElementById("shippingCity").value;
+                  var shSta = document.getElementById("shippingState").value;    
+                  var shZip = document.getElementById("shippingZip").value;           
+
+                
+                  var copyNam = shNam;
+                  var copyStr = shStr;
+                  var copyCit = shCit;
+                  var copySta = shSta;
+                  var copyZip = shZip;
+                  
+
+                  document.getElementById("billingName").value = copyNam;
+                  document.getElementById("billingStreet").value = copyStr;
+                  document.getElementById("billingCity").value = copyCit;
+                  document.getElementById("billingState").value = copySta;
+                  document.getElementById("billingZip").value = copyZip;
+              }
+
+              else if (sameInfo.checked == false)
+              {
+                  document.getElementById("billingName").value = '';
+                  document.getElementById("billingStreet").value = '';
+                  document.getElementById("billingCity").value = '';
+                  document.getElementById("billingState").value = '';
+                  document.getElementById("billingZip").value = '';
+              }
           }
-          else {
-              alert("Please fill out all the information.");
-          }
-          
-      })
+    </script>
+
+    <script>
+      function placeOrder() {
+           document.getElementById("myForm").submit();
+        }
     </script>
 
   </body>
