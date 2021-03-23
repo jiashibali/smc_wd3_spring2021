@@ -17,7 +17,7 @@
     <header>
       <div class="py-5 text-center">
 
-        <img class="d-block mx-auto mb-1" src="img/pusheencart.png" alt="shopping cart icon" width="250">
+        <img src="img/pusheencart.png" alt="shopping cart icon" width="250">
         
         <h2 class="mb-4">Ready to checkout?</h2>
 
@@ -131,12 +131,20 @@
 
                 <div class="col-sm-12 col-md-6">
                   <label for="ccName">Name on card</label>
-                  <input type="text" name="ccName" id="ccName" class="form-control">
+                    <input type="text" name="ccName" id="ccName" class="form-control">
                 </div>
 
                 <div class="col-sm-12 col-md-6 mb-3">
                   <label for="ccNumber">Credit card number</label>
-                  <input type="text" name="ccNumber" id="ccNumber" class="form-control">
+                    <div class="input-group mb-3">  
+                      <input type="text" class="form-control" aria-label="Text input with dropdown button" name="ccNumber" id="ccNumber">
+                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Card Type</button>
+                      <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Visa</a></li>
+                        <li><a class="dropdown-item" href="#">Mastercard</a></li>
+                        <li><a class="dropdown-item" href="#">Amex</a></li>
+                      </ul>
+                    </div>
                 </div>
 
 
