@@ -40,6 +40,17 @@ h5 {
 	font-weight: 700;
 }
 
+.alert-light {
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.alert {
+	margin-bottom: 0 !important;
+}
+
+
 /* subscription modal */
 .modal-content {
 	padding: 30px;
