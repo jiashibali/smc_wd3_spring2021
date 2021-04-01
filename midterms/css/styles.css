@@ -35,6 +35,10 @@ h5 {
     border: none;
 }
 
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    color: #c1272d;
+}
+
 .card-title {
 	font-family: 'Raleway';
 	font-weight: 700;
@@ -49,6 +53,7 @@ h5 {
 .alert {
 	margin-bottom: 0 !important;
 }
+
 
 
 /* subscription modal */
