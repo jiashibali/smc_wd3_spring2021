@@ -39,6 +39,22 @@ function drawFrame(){
 
 drawFrame();
 
+
+function drawScore() {
+    ctx.beginPath();
+    ctx.fillStyle = 'black';
+    ctx.fill();
+    ctx.font = '50px Arial, Helvetica, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('' + score, 400, 300);
+    ctx.closePath();
+
+    window.requestAnimationFrame(drawScore);
+}
+
+drawScore();
+
+
 canvas.addEventListener("click", function(event){
     //console.log(event);
     let mouseXp = event.pageX - event.target.offsetLeft;
@@ -70,3 +86,4 @@ function addScore(){
     score++;
     document.getElementById("score").innerHTML = score;
 }
+
