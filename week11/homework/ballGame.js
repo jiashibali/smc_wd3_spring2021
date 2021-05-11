@@ -11,12 +11,11 @@ let cVelY = 1;
 
 let cRadius = 75;
 
-
 function drawFrame(){
     ctx.clearRect(0, 0, cWidth, cHeight);
 
-    ctx.fillStyle = "teal";
-    ctx.strokeStyle = "darkorange";
+    ctx.fillStyle = "pink";
+    ctx.strokeStyle = "black";
 
     ctx.beginPath();
     ctx.arc(cPosX, cPosY, cRadius, 0, Math.PI*2);
@@ -45,7 +44,6 @@ canvas.addEventListener("click", function(event){
     let mouseXp = event.pageX - event.target.offsetLeft;
     let mouseYp = event.pageY - event.target.offsetTop;
     //console.log("Mouse X: " + mouseXp + " Mouse Y: " + mouseYp);
-
     let distX = Math.abs(cPosX - mouseXp);
     let distY = Math.abs(cPosY - mouseYp);
 
@@ -53,6 +51,22 @@ canvas.addEventListener("click", function(event){
         console.log("HIT!!!");
         cVelX = cVelX * 1.5;
         cVelY = cVelY * 1.5;
+        addScore();
     }
 
 })
+
+var score=0;
+
+var count = (function(){
+    var counter = 0;
+    return function () {return counter +=1;}
+})();
+function myGame(){
+    document.getElementById("score").innerHTML = count();
+}
+
+function addScore(){
+    score++;
+    document.getElementById("score").innerHTML = score;
+}

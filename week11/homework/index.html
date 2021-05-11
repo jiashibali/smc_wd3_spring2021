@@ -12,7 +12,20 @@
 
         canvas {
             border: 3px solid black;
+            background: palevioletred;
         }
+
+        h1 {
+            font-size: 28px;
+            display: inline;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 10px;
+        }
+
+        #score {
+            color: palevioletred;
+        }
+
 
     </style>
 </head>
@@ -21,6 +34,16 @@
     <canvas id="myGame" width="800" height="600">
         Please install a newer browser to play this game.
     </canvas>
+
+    <div class="scoreCount">
+       <h1>Score:</h1>
+       <h1 id="score">0</h1></div>
+
+    <div class="colorPicker">
+        <h1>Choose your ball's color:</h1>
+            <input type="color" name="color"
+                value="colorpick">
+    </div>
 
     <script src="ballGame.js"></script>
 
