@@ -12,30 +12,50 @@
 
         canvas {
             border: 3px solid black;
-            background: palevioletred;
+            background: white;
         }
 
         h1 {
             font-size: 28px;
-            display: inline;
             font-family: Arial, Helvetica, sans-serif;
-            padding: 10px;
+           
         }
 
+        .color-btn {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-right: 10px;
+            border: black 1px solid;
+        }
 
+        .color-btn[data-color="tomato"] {background: tomato;}
+        .color-btn[data-color="orange"] {background: orange;}
+        .color-btn[data-color="dodgerblue"] {background: dodgerblue;}
+        .color-btn[data-color="mediumseagreen"] {background: mediumseagreen;}
+        .color-btn[data-color="violet"] {background-color: violet;}
+
+        .colorselector {
+            padding: 10px;
+        }
 
     </style>
 </head>
 <body>
+    <div class="gamecontainer">
+        <canvas id="myGame" width="800" height="600">
+            Please install a newer browser to play this game.
+        </canvas>
+    </div>
 
-    <canvas id="myGame" width="800" height="600">
-        Please install a newer browser to play this game.
-    </canvas>
-
-    <div class="colorpicker">
+    <div class="colorselector">
         <h1>Ball Color:</h1>
-            <input type="color" name="color"
-                value="colorpick">
+        <button class="color-btn" data-color="tomato"></button>
+        <button class="color-btn" data-color="orange"></button>
+        <button class="color-btn" data-color="dodgerblue"></button>
+        <button class="color-btn" data-color="mediumseagreen"></button>
+        <button class="color-btn" data-color="violet"></button>
     </div>
 
     <script src="ballGame.js"></script>

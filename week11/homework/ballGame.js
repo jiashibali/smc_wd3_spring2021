@@ -11,10 +11,15 @@ let cVelY = 1;
 
 let cRadius = 75;
 
+let randomColor = function(){
+    let colValue = "blue"
+    return colValue;
+}
+
 function drawFrame(){
     ctx.clearRect(0, 0, cWidth, cHeight);
 
-    ctx.fillStyle = "pink";
+    ctx.fillStyle = "blue";
     ctx.strokeStyle = "black";
 
     ctx.beginPath();
@@ -54,6 +59,20 @@ function drawScore() {
 
 drawScore();
 
+var score = 0;
+
+var count = (function(){
+    var counter = 0;
+    return function () {return counter += 1;}
+})();
+function myGame(){
+    document.getElementById("score").innerHTML = count();
+}
+
+function addScore(){
+    score++;
+    document.getElementById("score").innerHTML = score;
+}
 
 canvas.addEventListener("click", function(event){
     //console.log(event);
@@ -69,21 +88,6 @@ canvas.addEventListener("click", function(event){
         cVelY = cVelY * 1.5;
         addScore();
     }
-
 })
 
-var score=0;
-
-var count = (function(){
-    var counter = 0;
-    return function () {return counter +=1;}
-})();
-function myGame(){
-    document.getElementById("score").innerHTML = count();
-}
-
-function addScore(){
-    score++;
-    document.getElementById("score").innerHTML = score;
-}
 
