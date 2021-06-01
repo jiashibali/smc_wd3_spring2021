@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/1d583462d0.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <title>Likhas by Jiashi Balisacan</title>
+  </head>
+  <body>
+    <header>
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Likhas logo" class="img-fluid"/>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link" href="pages/shop.html">Shop</a>
+                        </li>
+
+                        <li class="nav-item">
+                        <a class="nav-link" href="pages/blog.html">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                        <a class="nav-link" href="pages/about.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                        <a class="nav-link" href="pages/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link" href="pages/cart.html">
+                            <i class="fa fa-shopping-cart"></i>
+                            <!-- <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;}</style></defs><title>shop-bag-09</title><g id="Layer_5" data-name="Layer 5"><path d="M23,9V23H1V9H23m1-1H0V24H24V8Z"/><path class="cls-1" d="M5,8.5A6.76,6.76,0,0,1,12,2a6.76,6.76,0,0,1,7,6.5"/></g></svg> -->
+                            <span id="cartItems" class="pl-1">0</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!--CAROUSEL-->
+        <div id="homeCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                <img src="images/carouselplaceholder.jpg" class="d-block w-100" alt="..." id="carousel-img">
+                </div>
+
+                <div class="carousel-item active">
+                    <img src="images/carouselplaceholder.jpg" class="d-block w-100" alt="..." id="carousel-img">
+                </div>
+
+                <div class="carousel-item">
+                <img src="images/carouselplaceholder.jpg" class="d-block w-100" alt="..." id="carousel-img">
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    
+        <!-- PRODUCTS -->
+
+        <section class="container">
+            <div class="row mb-2">
+                <h1 class="text-center">When <span style="color: #67857C">nature</span> and <span style="color: #4C7485">art</span> go hand in hand</h1>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-12 col-md-4">
+                    <img src="images/product01.png" class="img-fluid">
+                    <h5 class="text-center">Hawaiian Sunset</h5>
+                    <h6 class="text-center">Starting at $80</h6>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <img src="images/product01.png" class="img-fluid">
+                    <h5 class="text-center">Hawaiian Sunset</h5>
+                    <h6 class="text-center">Starting at $80</h6>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <img src="images/product01.png" class="img-fluid">
+                    <h5 class="text-center">Hawaiian Sunset</h5>
+                    <h6 class="text-center">Starting at $80</h6>
+                </div>
+            </div>
+
+            <div class="btnstyle my-5">
+                <div class="focusbtn">
+                    <a href="#"><span class="btntitle">Shop Now</span></a>
+                </div>
+            </div>
+
+        </section>
+    
+
+        <section class="container mb-5">
+            <div class="d-flex flex-wrap justify-content-between mb-3">
+                <div><h3 class="ms-auto">Popular Themes</h3></div>
+                    <div><a href="#">Browse by Theme</a></p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row mb-3 g-5">
+                <div class="col-sm-12 col-md-4">
+                    <a href="#"><img src="images/theme-01.png" class="img-fluid"></a>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <a href="#"><img src="images/theme-02.png" class="img-fluid"></a>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <a href="#"><img src="images/theme-03.png" class="img-fluid"></a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="container mb-5">
+            <div><h3 class="mb-3">Browse by Price</h3></div>
+            
+            <div class="justify-content-md-center text-center">
+                <button type="button" class="btn btn-light" id="pricebtn">under <span style="font-size: 24px; font-weight: bolder;">$50</span></button>
+                <button type="button" class="btn btn-light" id="pricebtn">under <span style="font-size: 24px; font-weight: bolder;">$100</span></button>
+                <button type="button" class="btn btn-light" id="pricebtn">under <span style="font-size: 24px; font-weight: bolder;">$500</span></button>
+                <button type="button" class="btn btn-light" id="pricebtn">under <span style="font-size: 24px; font-weight: bolder;">$1000</span></button>
+                <button type="button" class="btn btn-light" id="pricebtn">over <span style="font-size: 24px; font-weight: bolder;">$1000</span></button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="container-fluid bg-dark shadow-lg text-white">
+        <div class="container py-2" id="hanging-icons">
+            <div class="row g-4 py-5 row-cols-1 row-cols-md-3">
+                <div class="col d-flex align-items-start">
+                    <div class="icon-square text-light flex-shrink-0 me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <h4 class="mb-4">CONTACT US</h4>
+                        <p>+1 (310) 736-0127</p>
+                        <p>contact@likhas.com</p>
+                        <p>1234 Palos Verdes Dr</p>
+                        <p>South Bay, CA 90045</p>
+                    </div>
+                </div>
+
+                <div class="col d-flex align-items-start">
+                    <div class="icon-square text-white flex-shrink-0 me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+                      </svg>
+                    </div>
+
+                    <div>
+                        <h4 class="mb-4">QUESTIONS?</h4>
+                        <p>F.A.Q.s</p>
+                        <p>Blog</p>
+                    </div>
+                </div>
+
+                <div class="col d-flex align-items-start">
+                    <div class="icon-square text-white flex-shrink-0 me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="mb-4">SOCIAL LINKS</h4>
+                        <p>Instagram</p>
+                        <p>Facebook</p>
+                        <p>Twitter</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
