@@ -70,32 +70,39 @@
     
                 <div class="row align-items-start">
                     <div class="col-sm-12 col-lg-8">
-                        <form action="" method="get" name="checkout" autocomplete="on" class="needs-validation mb-5"
-                            novalidate>
+                      <form class="needs-validation" novalidate>
 
                             <fieldset>
                                 <h4>Shipping information:</h4>
                   
                                 <div class="mb-3">
                                     <label for="shippingName">Full Name</label>
-                                    <input type="text" name="shippingName" class="form-control" id="shippingName" placeholder="Name">
+                                    <input type="text" name="shippingName" class="form-control" id="shippingName" placeholder="Name" required>
+                                    <div class="invalid-feedback">
+                                      Please enter your full name.
+                                  </div>
                                 </div>
                   
                                 <div class="mb-3">
                                   <label for="shippingStreet">Street Address</label>
-                                  <input type="text" name="shippingStreet" class="form-control" id="shippingStreet" placeholder="Street">
+                                  <input type="text" name="shippingStreet" class="form-control" id="shippingStreet" placeholder="Street" required><div class="invalid-feedback">
+                                    Please enter your street address.
+                                </div>
                                 </div>
                   
                                 <div class="mb-3">
                                   <label for="shippingCity">City</label>
-                                  <input type="text" name="shippingCity" class="form-control" id="shippingCity" placeholder="City">
+                                  <input type="text" name="shippingCity" class="form-control" id="shippingCity" placeholder="City" required>
+                                  <div class="invalid-feedback">
+                                    Please enter your city.
+                                </div>
                                 </div>
                   
                                 <div class="row g-3">
                                   
                                   <div class="col-sm-12 col-md-6">
                                     <label for="shippingState">State</label>
-                                      <select class="form-select" name="shippingState" id="shippingState">
+                                      <select class="form-select" name="shippingState" id="shippingState" required>
                                         <option selected></option>
                                         <option value="AL">AL</option>
                                         <option value="AK">AK</option>
@@ -149,12 +156,19 @@
                                         <option value="WV">WV</option>
                                         <option value="WY">WY</option>
                                       </select>
+                                      <div class="invalid-feedback">
+                                        Please select your state.
+                                    </div>
                                   </div>
                   
                                   <div class="col-sm-12 col-md-6 mb-3">
                                     <label for="shippingZip">ZIP Code</label>
-                                    <input type="text" name="shippingZip" class="form-control" id="shippingZip">
+                                    <input type="text" name="shippingZip" class="form-control" id="shippingZip" required>
+                                    <div class="invalid-feedback">
+                                      Please enter your ZIP code.
                                   </div>
+                                  </div>
+                                  
                   
                                 </div>
                   
@@ -175,24 +189,33 @@
                   
                                 <div class="mb-3">
                                   <label for="billingName">Billing Name</label>
-                                  <input type="text" name="billingName" class="form-control" id="billingName" placeholder="Name">
+                                  <input type="text" name="billingName" class="form-control" id="billingName" placeholder="Name" required>
+                                  <div class="invalid-feedback">
+                                    Please enter your full name.
+                                </div>
                                 </div>
                   
                                 <div class="mb-3">
                                   <label for="billingStreet">Billing Street Address</label>
-                                  <input type="text" name="billingStreet" class="form-control" id="billingStreet" placeholder="Street">
+                                  <input type="text" name="billingStreet" class="form-control" id="billingStreet" placeholder="Street" required>
+                                  <div class="invalid-feedback">
+                                    Please enter your street address.
+                                </div>
                                 </div>
                   
                                 <div class="mb-3">
                                   <label for="billingCity">Billing City</label>
-                                  <input type="text" name="billingCity" class="form-control" id="billingCity" placeholder="City">
+                                  <input type="text" name="billingCity" class="form-control" id="billingCity" placeholder="City" required>
+                                  <div class="invalid-feedback">
+                                    Please enter your city.
+                                </div>
                                 </div>
                   
                                 <div class="row g-3">
                                 
                                   <div class="col-sm-12 col-md-6">
                                     <label for="billingState">Billing State</label>
-                                      <select class="form-select" name="billingState" id="billingState">
+                                      <select class="form-select" name="billingState" id="billingState" required>
                                         <option selected></option>
                                         <option value="AL">AL</option>
                                         <option value="AK">AK</option>
@@ -246,11 +269,17 @@
                                         <option value="WV">WV</option>
                                         <option value="WY">WY</option>
                                       </select>
+                                      <div class="invalid-feedback">
+                                        Please select your state.
+                                    </div>
                                   </div>
                   
                                   <div class="col-sm-12 col-md-6 mb-3">
                                     <label for="billingZip">Billing ZIP Code</label>
-                                      <input type="text" name="billingZip" class="form-control" id="billingZip">
+                                      <input type="text" name="billingZip" class="form-control" id="billingZip" required>
+                                      <div class="invalid-feedback">
+                                        Please enter your ZIP code.
+                                    </div>
                                   </div>
                   
                                 </div>
@@ -269,19 +298,26 @@
                   
                                   <div class="col-sm-12 col-md-6">
                                     <label for="ccName">Name on card</label>
-                                      <input type="text" name="ccName" id="ccName" class="form-control">
+                                      <input type="text" name="ccName" id="ccName" class="form-control" required>
+                                      <div class="invalid-feedback">
+                                        Please enter your name as it appears on your card.
+                                    </div>
                                   </div>
                   
                                   <div class="col-sm-12 col-md-6 mb-3">
                                     <label for="ccNumber">Credit card number</label>
+                                    
                                       <div class="input-group mb-3">  
-                                        <input type="text" class="form-control" aria-label="Text input with dropdown button" name="ccNumber" id="ccNumber">
+                                        <input type="text" class="form-control" aria-label="Text input with dropdown button" name="ccNumber" id="ccNumber" required>
                                         <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Card Type</button>
                                         <ul class="dropdown-menu dropdown-menu-end">
                                           <li><a class="dropdown-item" href="#">Visa</a></li>
                                           <li><a class="dropdown-item" href="#">Mastercard</a></li>
                                           <li><a class="dropdown-item" href="#">Amex</a></li>
                                         </ul>
+                                        <div class="invalid-feedback">
+                                          Please enter your credit card number.
+                                      </div>
                                       </div>
                                   </div>
                   
@@ -291,8 +327,8 @@
                                 <div class="row g-3">
                                   <div class="col-sm-6 col-md-3">
                                     <label for="ccExpmonth">Expiration</label>
-                                    <select class="form-select" name="ccExpmonth" id="ccExpmonth">
-                                      <option selected>Month</option>
+                                    <select class="form-select" name="ccExpmonth" id="ccExpmonth" required>
+                                      <option value="">Month</option>
                                       <option value="01">01</option>
                                       <option value="02">02</option>
                                       <option value="03">03</option>
@@ -306,12 +342,15 @@
                                       <option value="11">11</option>
                                       <option value="12">12</option>
                                     </select>
+                                    <div class="invalid-feedback">
+                                      Please select expiration month.
+                                  </div>
                                   </div>
                   
                                   <div class="col-sm-6 col-md-3">
                                     <label for="ccExpyear"></label>
-                                    <select class="form-select" name="ccExpyear" id="ccExpyear">
-                                      <option selected>Year</option>
+                                    <select class="form-select" name="ccExpyear" id="ccExpyear" required>
+                                      <option value="">Year</option>
                                       <option value="2021">2021</option>
                                       <option value="2022">2022</option>
                                       <option value="2023">2023</option>
@@ -322,13 +361,18 @@
                                       <option value="2028">2028</option>
                                       <option value="2029">2029</option>
                                       <option value="2030">2030</option>
-                  
                                     </select>
+                                    <div class="invalid-feedback">
+                                      Please select expiration year.
+                                  </div>
                                   </div>
                                   
                                   <div class="col-sm-6 col-md-3 mb-3">
                                     <label for="ccCvv">CVV</label>
-                                    <input type="text" name="ccCvv" id="ccCvv" class="form-control">
+                                    <input type="text" name="ccCvv" id="ccCvv" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                      Please enter your credit card CCV.
+                                  </div>
                                   </div>
                   
                   
@@ -342,10 +386,9 @@
 
                                 <div class="btnstyle my-3">
                                     <div class="focusbtn">
-                                        <a href="checkout.html" target="_blank"><span class="btntitle">SUBMIT</span></a>
+                                      <a><button class="btn" type="submit"><span class="btntitle">Submit</span></button></a>
                                     </div>
                                 </div>
-
                             
                         </form>
                     </div>
@@ -383,6 +426,7 @@
                 </div>
             </div>
         </section>
+
     
     
     
@@ -446,6 +490,27 @@
     </script>
 
     <script src="../js/script.js"></script>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
 
   </body>
 </html>

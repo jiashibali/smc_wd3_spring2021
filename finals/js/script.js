@@ -56,5 +56,4 @@ function placeOrder() {
             count = parseInt(items.innerHTML);
             items.innerHTML = count + parseInt(quantity.value);
         });
-        
-        
+
