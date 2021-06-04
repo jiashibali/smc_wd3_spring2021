@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="Likhas logo" class="img-fluid"/>
+                    <img src="images/likhas-logo.png" alt="Likhas logo" class="img-fluid"/>
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,14 +38,17 @@
                         </li>
 
                         <li class="nav-item">
-                        <a class="nav-link" href="pages/about.html">About</a>
+                        <a class="nav-link" href="pages/about.html" >About</a>
                         </li>
 
                         <li class="nav-item">
                         <a class="nav-link" href="pages/contact.html">Contact</a>
                         </li>
                     </ul>
-                
+
+
+
+
                     <div class="navbar-nav ml-auto">
                         <a class="nav-link" href="pages/cart.html">
                             <i class="fa fa-shopping-cart"></i>
@@ -53,6 +56,7 @@
                             <span id="cartItems" class="pl-1">0</span>
                         </a>
                     </div>
+
                 </div>
 
             </div>
@@ -64,23 +68,19 @@
 
         <!--CAROUSEL-->
         <div id="homeCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
-                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-                <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-            </div>
+            
 
             <div class="carousel-inner">
                 <div class="carousel-item">
-                <img src="images/carouselplaceholder.jpg" class="d-block w-100" alt="..." id="carousel-img">
+                <img src="images/carousel02.jpg" class="d-block w-100" alt="..." id="carousel-img">
                 </div>
 
                 <div class="carousel-item active">
-                    <img src="images/carouselplaceholder.jpg" class="d-block w-100" alt="..." id="carousel-img">
+                    <img src="images/carousel01.jpg" class="d-block w-100" alt="..." id="carousel-img">
                 </div>
 
                 <div class="carousel-item">
-                <img src="images/carouselplaceholder.jpg" class="d-block w-100" alt="..." id="carousel-img">
+                <img src="images/carousel03.jpg" class="d-block w-100" alt="..." id="carousel-img">
                 </div>
 
             </div>
@@ -99,62 +99,83 @@
         <!-- PRODUCTS -->
 
         <section class="container">
-            <div class="row mb-2">
-                <h1 class="text-center">When <span style="color: #67857C">nature</span> and <span style="color: #4C7485">art</span> go hand in hand</h1>
-            </div>
 
-            <div class="row mb-3">
+            <div><h3 class="mb-3">Curator's Choice</h3></div>
+
+            <div class="row mb-4 g-5">
                 <div class="col-sm-12 col-md-4">
-                    <img src="images/product01.png" class="img-fluid">
-                    <h5 class="text-center">Hawaiian Sunset</h5>
-                    <h6 class="text-center">Starting at $80</h6>
+                    <div class="smoothshadow mb-2">
+                        <img src="images/product01.jpg" class="img-fluid">
+                    </div>
+                        <h5 class="text-center">Milkyway Chaser</h5>
+                        <h6 class="text-center">Starting at $150</h6>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <img src="images/product01.png" class="img-fluid">
-                    <h5 class="text-center">Hawaiian Sunset</h5>
-                    <h6 class="text-center">Starting at $80</h6>
+                    <div class="smoothshadow mb-2">
+                        <img src="images/product02.jpg" class="img-fluid">
+                    </div>
+                        <h5 class="text-center">Offshoot Trail</h5>
+                        <h6 class="text-center">Starting at $100</h6>
+                    
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <img src="images/product01.png" class="img-fluid">
-                    <h5 class="text-center">Hawaiian Sunset</h5>
-                    <h6 class="text-center">Starting at $80</h6>
+                    <div class="smoothshadow mb-2">
+                        <img src="images/product03.jpg" class="img-fluid">
+                    </div>
+                        <h5 class="text-center">Technicolor Terrain</h5>
+                        <h6 class="text-center">Starting at $120</h6>
                 </div>
             </div>
 
             <div class="btnstyle my-5">
                 <div class="focusbtn">
-                    <a href="#"><span class="btntitle">Shop Now</span></a>
+                    <a href="pages/shop.html"><span class="btntitle">Shop Now</span></a>
                 </div>
             </div>
 
         </section>
     
 
-        <section class="container mb-5">
-            <div class="d-flex flex-wrap justify-content-between mb-3">
-                <div><h3 class="ms-auto">Popular Themes</h3></div>
-                    <div><a href="#">Browse by Theme</a></p>
-                    </div>
-                </div>
-            </div>
+        <section class="container mb-4">
+
+            
+            <div><h3 class="mb-3">Popular Themes</h3></div>
         
-            <div class="row mb-3 g-5">
-                <div class="col-sm-12 col-md-4">
-                    <a href="#"><img src="images/theme-01.png" class="img-fluid"></a>
+            <div class="row mb-3">
+                <div class="col-sm-4 col-lg-2 themes mb-4">
+                    <a href="#"><img src="images/theme01.jpg" class="img-fluid">
+                    <div class="centered">ANIMALS</a></div> 
                 </div>
 
-                <div class="col-sm-12 col-md-4">
-                    <a href="#"><img src="images/theme-02.png" class="img-fluid"></a>
+                <div class="col-sm-4 col-lg-2 themes mb-4">
+                    <a href="#"><img src="images/theme02.jpg" class="img-fluid">
+                    <div class="centered">ASTRO</a></div> 
                 </div>
 
-                <div class="col-sm-12 col-md-4">
-                    <a href="#"><img src="images/theme-03.png" class="img-fluid"></a>
+                <div class="col-sm-4 col-lg-2 themes mb-4">
+                    <a href="#"><img src="images/theme03.jpg" class="img-fluid">
+                    <div class="centered">CITY</a></div> 
+                </div>
+
+                <div class="col-sm-4 col-lg-2 themes mb-4">
+                    <a href="#"><img src="images/theme04.jpg" class="img-fluid">
+                    <div class="centered">LANDSCAPES</a></div> 
+                </div>
+
+                <div class="col-sm-4 col-lg-2 themes mb-4">
+                    <a href="#"><img src="images/theme05.jpg" class="img-fluid">
+                    <div class="centered">MACRO</a></div> 
+                </div>
+
+                <div class="col-sm-4 col-lg-2 themes mb-4">
+                    <a href="#"><img src="images/theme06.jpg" class="img-fluid">
+                    <div class="centered">WATER</a></div> 
                 </div>
             </div>
 
         </section>
 
-        <section class="container mb-5">
+        <section class="container mb-4">
             <div><h3 class="mb-3">Browse by Price</h3></div>
             
             <div class="justify-content-md-center text-center">
@@ -165,6 +186,13 @@
                 <button type="button" class="btn btn-light" id="pricebtn">over <span style="font-size: 24px; font-weight: bolder;">$1000</span></button>
             </div>
 
+        </section>
+
+        <section class="container mb-4">
+            <div><h3 class="mb-3">A Glimpse of Our Process</h3></div>
+            <div class="ratio ratio-16x9 mb-5">
+                <iframe src="https://www.youtube.com/embed/WGrjnm7YsG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </section>
 
     </main>
@@ -185,8 +213,8 @@
                         <h4 class="mb-4">CONTACT US</h4>
                         <p>+1 (310) 736-0127</p>
                         <p>contact@likhas.com</p>
-                        <p>1234 Palos Verdes Dr</p>
-                        <p>South Bay, CA 90045</p>
+                        <p>5504 Crestridge Rd</p>
+                        <p>Rancho Palos Verdes, CA 90275</p>
                     </div>
                 </div>
 
@@ -213,8 +241,7 @@
                     <div>
                         <h4 class="mb-4">SOCIAL LINKS</h4>
                         <p>Instagram</p>
-                        <p>Facebook</p>
-                        <p>Twitter</p>
+                        <p>Youtube</p>
                     </div>
                 </div>
             </div>
