@@ -264,3 +264,19 @@ footer h4 {
     letter-spacing: 1.5px;
 }
 
+/* CART - FORM */
+.form-control {
+    border-radius: 0px;
+}
+
+.form-select {
+    border-radius: 0px;
+}
+
+.form-check-input[type="checkbox"] {
+    border-radius: 0px; 
+}
+
+.btn-outline-secondary {
+    border-color: #ced4da;
+}
